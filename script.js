@@ -14,7 +14,7 @@ fetchWeather(search.value);
 async function fetchWeather(city){
     const url=`http://api.weatherapi.com/v1/current.json?key=7d84ad3b66a545e9b3d94455240401&q=${city}`;
     try{
-        let response=await fetch(url);
+        let response=await fetch(url,{mode:"cors"});
         let data=await response.json();
         console.log(data);
         displayWeather(data)
