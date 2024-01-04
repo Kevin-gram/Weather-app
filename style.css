@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Playfair Display', serif;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: whitesmoke;
+    min-height: 8vh;
+    background-color: #4364c0;
+    font-family: 'Roboto', sans-serif;
+}
+.dispaly{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: x-small;
+    gap: 10px;
+    min-width: 300px;
+    background-color: #4364c0;
+    color: whitesmoke;
+    padding: 5px;
+    border-radius: 10px;
+    display: none;
+}
+.dispaly.active{
+    display:block;
+}
+p{
+    font-size: 20px;
+}
+h3{
+    font-size: 30px;
+}
+h1{
+    font-weight: bolder;
+    font-size: 40px;
+}
+.main{
+   background-image: url(imgs/landscape-3369304_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    min-height: 627px;
+    align-items: center;
+  
+}
+.search{
+   
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+input{
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    min-width: 300px;
+}
+button{
+    padding: 10px;
+    border: none;
+    min-width: 100px;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4364c0;
+    color: whitesmoke;
+}
+.display{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #4364c0;
+    color: whitesmoke;
+    padding: 20px;
+    border-radius: 5px;
+}
+@media screen and (max-width: 768px) {
+    .nav{
+        flex-direction: column;
+        justify-content: center;
+        font-size: larger;    }
+    .main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .input{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    button{
+        margin: 10px;
+    }
+    
+}
+@media  screen and (max-width: 320px) {
+    input{
+        min-width: 300px;
+    }
+}
